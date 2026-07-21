@@ -1,0 +1,37 @@
+<dataStore>
+  <id>DataStoreInfoImpl--d7dc150:14a05204957:-7ffc</id>
+  <name>Geodata</name>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--d7dc150:14a05204957:-7fff</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="Evictor run periodicity">300</entry>
+    <entry key="schema">geodata</entry>
+    <entry key="Max open prepared statements">50</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="database">pladias</entry>
+    <entry key="host">pladias_master</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="Support on the fly geometry simplification">true</entry>
+    <entry key="Expose primary keys">true</entry>
+    <entry key="Connection timeout">20</entry>
+    <entry key="create database">false</entry>
+    <entry key="port">5432</entry>
+    <entry key="passwd">crypt1:Q+xZ5dxG4N/+ZXnbAqL+cf1fZo+0mbc3</entry>
+    <entry key="min connections">1</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="namespace">validation</entry>
+    <entry key="Evictor tests per run">3</entry>
+    <entry key="max connections">10</entry>
+    <entry key="Test while idle">true</entry>
+    <entry key="user">geoserver</entry>
+    <entry key="Max connection idle time">300</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

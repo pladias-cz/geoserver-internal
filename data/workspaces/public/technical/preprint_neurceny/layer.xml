@@ -1,0 +1,15 @@
+<layer>
+  <name>preprint_neurceny</name>
+  <id>LayerInfoImpl--66eac86c:150859e0dad:5afe</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--66eac86c:150859e0dad:5afd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

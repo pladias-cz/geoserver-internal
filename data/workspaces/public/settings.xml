@@ -1,0 +1,23 @@
+<settings>
+  <id>SettingsInfoImpl-23dd7262:14b2cb551e5:3273</id>
+  <workspace>
+    <id>WorkspaceInfoImpl-23dd7262:14b2cb551e5:3271</id>
+    <name>public</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <address>Zámek 1</address>
+    <addressCity>Průhonice</addressCity>
+    <addressCountry>Czech Republic</addressCountry>
+    <addressState>Czech Republic</addressState>
+    <contactEmail>jan.wild@ibot.cas.cz</contactEmail>
+    <contactOrganization>ibot.cas.cz</contactOrganization>
+    <contactPerson>Jan Wild</contactPerson>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>8</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <verbose>false</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
+</settings>

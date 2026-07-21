@@ -1,0 +1,15 @@
+<layer>
+  <name>preprint_jisty</name>
+  <id>LayerInfoImpl--66eac86c:150859e0dad:5af0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--66eac86c:150859e0dad:5aef</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

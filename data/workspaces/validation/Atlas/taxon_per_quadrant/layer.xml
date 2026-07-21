@@ -1,0 +1,15 @@
+<layer>
+  <name>taxon_per_quadrant</name>
+  <id>LayerInfoImpl--d7dc150:14a05204957:-7ff4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--d7dc150:14a05204957:-7ff8</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--d7dc150:14a05204957:-7ff5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

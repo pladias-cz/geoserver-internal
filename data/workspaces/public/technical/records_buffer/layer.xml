@@ -1,0 +1,15 @@
+<layer>
+  <name>records_buffer</name>
+  <id>LayerInfoImpl-23dd7262:14b7fc89399:-110f</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-23dd7262:14b7fc89399:-1110</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

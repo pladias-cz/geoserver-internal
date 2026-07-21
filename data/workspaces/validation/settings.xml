@@ -1,0 +1,25 @@
+<settings>
+  <id>SettingsInfoImpl--d7dc150:14a05204957:-13ae</id>
+  <workspace>
+    <id>WorkspaceInfoImpl--d7dc150:14a05204957:-7fff</id>
+    <name>validation</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <address>Zámek 1, Průhonice</address>
+    <addressCity>Průhonice</addressCity>
+    <addressCountry>Czech Republic</addressCountry>
+    <addressState>Czech Republic</addressState>
+    <addressType>Work</addressType>
+    <contactEmail>jan.wild@ibot.cas.cz</contactEmail>
+    <contactOrganization>Botanický ústav, AV ČR vvi</contactOrganization>
+    <contactPerson>Jan Wild</contactPerson>
+    <contactPosition>projekt PLADIAS</contactPosition>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>8</numDecimals>
+  <onlineResource>http://geoserver.org</onlineResource>
+  <verbose>false</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
+</settings>

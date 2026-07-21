@@ -1,0 +1,70 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-6df0b4af:1511f24c18f:4cc4</id>
+  <name>preprint_common_recent</name>
+  <nativeName>preprint_common_recent</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-23dd7262:14b2cb551e5:3272</id>
+  </namespace>
+  <title>preprint_common_recent</title>
+  <keywords>
+    <string>preprint_common_recent</string>
+    <string>features</string>
+  </keywords>
+  <nativeCRS>GEOGCS[&quot;WGS 84&quot;, 
+  DATUM[&quot;World Geodetic System 1984&quot;, 
+    SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], 
+    AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], 
+  PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], 
+  UNIT[&quot;degree&quot;, 0.017453292519943295], 
+  AXIS[&quot;Geodetic longitude&quot;, EAST], 
+  AXIS[&quot;Geodetic latitude&quot;, NORTH], 
+  AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]</nativeCRS>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>11.0</minx>
+    <maxx>20.0</maxx>
+    <miny>48.0</miny>
+    <maxy>52.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>11.0</minx>
+    <maxx>20.0</maxx>
+    <miny>48.0</miny>
+    <maxy>52.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>preprint_common_recent</name>
+        <sql>SELECT ST_Union(q.centroid_wgs) AS centroid&#xd;
+&#xd;
+        FROM atlas.records as r
+            JOIN geodata.quadrants_full q ON ST_Within(r.coords_wgs, q.geom_wgs)
+            JOIN atlas.taxon_mapsettings AS settings ON (settings.taxon_id = r.taxon_id)
+            WHERE  r.taxon_id = %TAXON_ID% AND
+             r.datum &gt;=&apos;2000-01-01&apos;AND
+        r.validation_status = 0
+        GROUP BY q.id
+        HAVING COUNT(r.id) &gt;= max(settings.common_threshold)
+</sql>
+        <escapeSql>false</escapeSql>
+        <parameter>
+          <name>TAXON_ID</name>
+          <defaultValue>0</defaultValue>
+          <regexpValidator>^[\d]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-23dd7262:14b2cb551e5:3275</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

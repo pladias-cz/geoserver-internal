@@ -1,0 +1,15 @@
+<layer>
+  <name>records</name>
+  <id>LayerInfoImpl-23dd7262:14b7e0094b2:-58ef</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-23dd7262:14b7e0094b2:-58f0</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

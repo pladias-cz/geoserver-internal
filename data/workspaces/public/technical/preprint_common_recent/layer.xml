@@ -1,0 +1,15 @@
+<layer>
+  <name>preprint_common_recent</name>
+  <id>LayerInfoImpl-6df0b4af:1511f24c18f:4cc5</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-6df0b4af:1511f24c18f:4cc4</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
