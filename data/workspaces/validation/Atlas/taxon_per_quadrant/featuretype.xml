@@ -48,7 +48,7 @@
           JOIN atlas.records r ON ST_Within(r.coords_wgs, q.geom_wgs)
           JOIN atlas.record_validation_status status ON r.validation_status = status.id
           WHERE r.taxon_id = %TAXON_ID%
-          ORDER BY q.id, status.priority DESC;
+          ORDER BY q.id, status.priority DESC
 </sql>
         <escapeSql>false</escapeSql>
         <parameter>

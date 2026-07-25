@@ -50,7 +50,7 @@
             JOIN atlas.record_validation_status status ON r.validation_status = status.id
             WHERE r.taxon_id = %TAXON_ID%
             AND r.project_id = %PROJECT_ID%
-            ORDER BY q.id, status.priority DESC;
+            ORDER BY q.id, status.priority DESC
 </sql>
         <escapeSql>false</escapeSql>
         <parameter>
