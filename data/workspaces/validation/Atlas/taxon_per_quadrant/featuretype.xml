@@ -39,14 +39,16 @@
     <entry key="JDBC_VIRTUAL_TABLE">
       <virtualTable>
         <name>taxon_per_quadrant</name>
-        <sql>SELECT q.id,
-          (SELECT id FROM atlas.record_validation_status WHERE priority=max(status.priority) LIMIT 1) AS max_valid_status,
+        <sql>
+          SELECT DISTINCT ON (q.id)
+          q.id,
+          status.id AS max_valid_status,
           q.geom_wgs
           FROM geodata.quadrants_full q
           JOIN atlas.records r ON ST_Within(r.coords_wgs, q.geom_wgs)
-          JOIN atlas.record_validation_status as status ON (r.validation_status=status.id  )
+          JOIN atlas.record_validation_status status ON r.validation_status = status.id
           WHERE r.taxon_id = %TAXON_ID%
-          GROUP BY q.id
+          ORDER BY q.id, status.priority DESC;
 </sql>
         <escapeSql>false</escapeSql>
         <parameter>

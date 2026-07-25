@@ -39,13 +39,17 @@
     <entry key="JDBC_VIRTUAL_TABLE">
       <virtualTable>
         <name>taxon_quadrant_count_1</name>
-        <sql>SELECT q.id as id, ST_Union(q.geom_wgs) AS geom, COUNT(r.id) as count
-          FROM geodata.quadrants_full q
-          JOIN atlas.records r ON ST_Within(r.coords_wgs, q.geom_wgs)
-          WHERE r.taxon_id = %TAXON_ID%  AND
-          r.validation_status = 0
-          GROUP BY q.id
-          HAVING COUNT(r.id) &gt; 0
+        <sql>
+          SELECT
+          q.id,
+          q.geom_wgs AS geom,
+          COUNT(*) AS count
+          FROM atlas.records r
+          JOIN geodata.quadrants_full q ON ST_Intersects(q.geom_wgs, r.coords_wgs)
+          WHERE r.taxon_id = %TAXON_ID%
+          AND r.validation_status = 0
+          GROUP BY q.id, q.geom_wgs
+          HAVING COUNT(*) &gt; 0
 </sql>
         <escapeSql>false</escapeSql>
         <parameter>
