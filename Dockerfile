@@ -10,3 +10,5 @@ RUN chown -R ubuntu:ubuntu /opt/geoserver_data /usr/local/tomcat
 USER ubuntu
 
 COPY --chown=ubuntu:ubuntu ./data /opt/geoserver_data
+
+CMD ["/opt/tomcat/bin/catalina.sh", "run"]
