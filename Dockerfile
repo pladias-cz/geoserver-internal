@@ -1,14 +1,20 @@
 FROM docker.osgeo.org/geoserver:2.28.4
 
-ENV RUN_UNPRIVILEGED=false
-ENV RUN_WITH_USER_UID=1000
-ENV RUN_WITH_USER_GID=1000
-ENV CHANGE_OWNERSHIP_ON_FOLDERS=false
+ENV DB_HOST=pladias_master
+ENV DB_NAME=pladias
+ENV DB_USER=geoserver
+ENV DB_PASSWORD=geoserver
+ENV PROXY_BASE_URL=http://localhost:8001/geoserver
 
-RUN chown -R ubuntu:ubuntu /opt/geoserver_data /usr/local/tomcat
 
-USER ubuntu
+RUN chown -R 1000:1000 /opt/geoserver_data  /usr/local/tomcat
 
-COPY --chown=ubuntu:ubuntu ./data /opt/geoserver_data
+USER 1000
 
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+COPY --chown=1000:1000 ./data /opt/geoserver_data
+COPY --chown=1000:1000 ./templates /templates
+
+COPY --chown=1000:1000 start.sh /start.sh
+RUN chmod +x /start.sh
+
+ENTRYPOINT ["/start.sh"]

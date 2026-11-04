@@ -1,0 +1,29 @@
+<settings>
+  <id>SettingsInfoImpl--40cbcd83:16d39de9b3a:-7fef</id>
+  <workspace>
+    <id>WorkspaceInfoImpl--40cbcd83:16d39de9b3a:-7ff1</id>
+    <name>shared</name>
+  </workspace>
+  <contact>
+    <id>contact</id>
+    <addressCity>Prague</addressCity>
+    <addressCountry>Czech Republic</addressCountry>
+    <contactEmail>jan.wild@ibot.cas.cz</contactEmail>
+    <contactOrganization>http://ibot.cas.cz</contactOrganization>
+    <contactPerson>Jan Wild</contactPerson>
+  </contact>
+  <charset>UTF-8</charset>
+  <numDecimals>4</numDecimals>
+  <proxyBaseUrl>${PROXY_BASE_URL}</proxyBaseUrl>
+  <verbose>true</verbose>
+  <verboseExceptions>false</verboseExceptions>
+  <metadata>
+    <map>
+      <entry>
+        <string>quietOnNotFound</string>
+        <boolean>false</boolean>
+      </entry>
+    </map>
+  </metadata>
+  <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
+</settings>
