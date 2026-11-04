@@ -15,7 +15,4 @@ envsubst < /templates/technical/datastore.xml \
 envsubst < /templates/global.xml \
   > /opt/geoserver_data/global.xml
 
-envsubst < /templates/settings.xml \
-  > /opt/geoserver_data/workspaces/shared/settings.xml
-
 exec catalina.sh run
